@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "firstname": "raj",
+      "lastname": "kumar",
+      "dob": "20-01-2024",
+      "id": "a544"
+    },
+    {
+      "firstname": "ram",
+      "lastname": "sitha",
+      "dob": "5-07-2023",
+      "id": "9f6d"
+    },
+    {
+      "firstname": "bharath",
+      "lastname": "rao",
+      "dob": "17-11-2022",
+      "id": "3306"
+    },
+    {
+      "id": "796b",
+      "firstname": "daa",
+      "lastname": "tys",
+      "dob": "2024-05-11"
+    },
+    {
+      "id": "2d15",
+      "firstname": "sham",
+      "lastname": "kot",
+      "dob": "2024-05-09"
+    },
+    {
+      "id": "84d1",
+      "firstname": "gan",
+      "lastname": "seg",
+      "dob": "2024-05-07"
+    }
+  ]
+}
