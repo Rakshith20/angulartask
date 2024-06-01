@@ -1,31 +1,48 @@
-<h1 class="header">{{title}}</h1>
-
+<h1 class="header">{{ title }}</h1>
 
 <form #register="ngForm" class="register-form">
   <div class="form-field">
     <label>First Name</label>
-    <input ngModel name="firstname" #firstname="ngModel" type="text" placeholder="Enter First Name" required/>
+    <input
+      ngModel
+      name="firstname"
+      #firstname="ngModel"
+      type="text"
+      placeholder="Enter First Name"
+      required
+    />
     <span *ngIf="firstname.touched && firstname.errors">Enter First Name</span>
   </div>
   <div class="form-field">
     <label>Last Name</label>
-    <input  ngModel name="lastname" #lastname="ngModel" type="text" placeholder="Enter Last Name" required/>
+    <input
+      ngModel
+      name="lastname"
+      #lastname="ngModel"
+      type="text"
+      placeholder="Enter Last Name"
+      required
+    />
     <span *ngIf="lastname.touched && lastname.errors">Enter Last Name</span>
   </div>
   <div class="form-field">
     <label>DOB</label>
-    <input ngModel name="dob"  #dob="ngModel" type="date" placeholder="Enter DOB" required/>
+    <input
+      ngModel
+      name="dob"
+      #dob="ngModel"
+      type="date"
+      placeholder="Enter DOB"
+      required
+    />
     <span *ngIf="dob.touched && dob.errors">Enter DOB</span>
   </div>
   <div class="form-button">
-    <button (click)="onSave(register.value)"[disabled]="!register.valid" >
-      Save
+    <button (click)="onSave(register.value)" [disabled]="!register.valid">
+      {{ isEditing ? "Update" : "Save" }}
     </button>
-    <button (click)="register.reset()">
-      Cancel
-    </button>
+    <button (click)="register.reset()">Cancel</button>
   </div>
-  
 </form>
 
 <table>
@@ -33,11 +50,15 @@
     <th>FirstName</th>
     <th>LastName</th>
     <th>DOB</th>
+    <th>Actions</th>
   </tr>
   <tr *ngFor="let user of users">
-    <td>{{user.firstname}}</td>
-    <td>{{user.lastname}}</td>
-    <td>{{user.dob}}</td>
+    <td>{{ user.firstname }}</td>
+    <td>{{ user.lastname }}</td>
+    <td>{{ user.dob }}</td>
+    <td>
+      <button class="edit-btn" (click)="onEdit(user)">Edit</button>
+      <button class="delete-btn" (click)="onDelete(user.id)">Delete</button>
+    </td>
   </tr>
- 
 </table>

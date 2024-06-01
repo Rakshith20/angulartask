@@ -1,70 +1,78 @@
-.header{
-    text-align: center;
+.header {
+  text-align: center;
 }
 
-
-.register-form{
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: 1px solid black;
-    padding: 20px;
-    width: fit-content; 
-    margin: auto;
-    
+.register-form {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  width: fit-content;
+  margin: auto;
 }
-.form-field{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    
+.form-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-label{
-    width: 130px;
-    font-size: 20px;
-    color: blue;
-    font-weight: 700;
+label {
+  width: 130px;
+  font-size: 20px;
+  color: blue;
+  font-weight: 700;
 }
 
-input{
-    padding: 10px;
-    font-size: 20px;
-    background-color:blue;
-    color: white;
+input {
+  padding: 10px;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
 }
 
-input::placeholder{
-    color: white;
+input::placeholder {
+  color: white;
 }
 
-.form-button{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
+.form-button {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
 }
 
-button{
-    /* padding-left:10px;
+button {
+  /* padding-left:10px;
     padding-right:10px;
     padding-top: 6px;
     padding-bottom: 6px; */
-    padding: 10px 20px 10px 20px;
-    background-color: blue;
-    color:white;
+  padding: 10px 20px 10px 20px;
+  background-color: blue;
+  color: white;
 }
 
-span{
-    color: red;
-    font-size: 16px;
+span {
+  color: red;
+  font-size: 16px;
 }
 
-table,tr,th,td{
-    border: 1px solid black;
-    
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
 }
 
-table{
-    margin: auto;
-    margin-top: 100px;
+table {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.edit-btn {
+  background-color: yellow;
+  color: black;
+}
+
+.delete-btn {
+  background-color: red;
 }
